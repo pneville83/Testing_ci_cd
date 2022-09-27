@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
-
+import React from 'react';
 
 function App() {
 const [like, setLike] = useState (25);
