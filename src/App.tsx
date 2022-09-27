@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
-import Formulario from './Components/Form';
+
 
 function App() {
 const [like, setLike] = useState (25);
@@ -29,7 +29,6 @@ function likes3 (){
 
   return (
     <div className="App">
-      <Formulario />
       <p data-testid="countLike1">{like}</p>
       <button data-testid="plus" onClick={()=> setLike ((prevLike)=> prevLike + 1)} >1 Like +</button>
       <button data-testid="less"  onClick={()=> likes()} > 1 like - </button>
